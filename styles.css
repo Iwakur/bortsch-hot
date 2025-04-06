@@ -1,0 +1,151 @@
+header img {
+    width: 100%; 
+    height: auto; 
+    display: block;
+}
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5b237;
+    color: #ffffff;
+
+}
+
+header {
+    color: white; /* White text */
+    text-align: center;
+    padding: 5px 0; /* Top and bottom spacing */
+    width: 100%;
+    position: relative; /* Keeps it in flow */
+}
+
+.red-link {
+    text-decoration: none;
+    color: rgb(100, 0, 0); /* Initial dark red */
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s ease; /* Smooth transition */
+}
+
+.red-link:hover {
+    color: rgb(255, 0, 0); /* Fully red on hover */
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #242424;
+    text-decoration: none;
+}
+
+header img {
+    display: block;
+    margin: 20px 0;
+    max-width: 100%;
+    height: auto;
+}
+
+table {
+    margin: 0px auto;
+    border-collapse: collapse;
+    border-radius: 3%;
+    background-color: #b41712;
+    max-width: 80%;
+    width: 80%;
+    border-collapse: collapse;
+}
+
+
+caption {
+    font-size: 1.8em;
+    margin: 10px 0;
+    color: #563b1f;
+    font-weight: 250;
+
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+
+#resultsTable{
+    font-size: 15px; 
+}
+
+footer {
+    color: #ffffff;
+    text-align: center;
+    width: 100%;
+    margin-top: 5vh;
+    display: block;
+    text-decoration: none;
+}
+#cont {
+    width: auto;
+    height: auto;
+}
+#about {
+    margin: 5vh;
+    padding: 5vh;
+    background-color: #d79a2a;
+    border: 10px solid #563b1f;
+    border-radius: 20px
+}
+/* FORM CONTAINER */
+form {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f3a546;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+input, textarea, select {
+    width: 25%;
+    display: flex;
+    padding: 10px;
+    margin-right: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+input:focus, textarea:focus, select:focus {
+    border-color: #d79a2a;
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #d79a2a;
+    color: #ffffff;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+#order h2 {
+    text-align: center;
+}
+
+
+button:hover {
+    background-color: #b57f1b;
+}

@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bortsch-hot</title>
+    <link rel="icon" type="image/png" href="icon.png">
+    <link rel="stylesheet" href="styles.css">
+    <script src="include.js"></script>
+</head>
+<body onload="includeHTML()">
+<div include-html="additionals/header.html"></div>
+    <section id="order">
+        <h2>Commander vos plats</h2>
+        <form id="orderForm" action="http://localhost/www/buy.php" method="post">
+            <fieldset>
+                <legend>Plats principaux</legend>
+                <label for="bortsch">Bortsch (8,50€)</label>
+                <select id="bortsch" name="bortsch">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+
+                <label for="varenyky">Varenyky (7,00€)</label>
+                <select id="varenyky" name="varenyky">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+
+                <label for="holubtsi">Holubtsi (9,00€)</label>
+                <select id="holubtsi" name="holubtsi">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+
+                <label for="kotleta">Kotleta po-kyivsky (10,00€)</label>
+                <select id="kotleta" name="kotleta">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+
+                <label for="salo">Salo (5,50€)</label>
+                <select id="salo" name="salo">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+
+                <label for="pampushky">Pampushky (4,50€)</label>
+                <select id="pampushky" name="pampushky">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+            </fieldset>
+
+            <fieldset>
+                <legend>Boissons</legend>
+                <label for="kompot">Kompot (3,00€)</label>
+                <select id="kompot" name="kompot">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+
+                <label for="kvas">Kvas (3,50€)</label>
+                <select id="kvas" name="kvas">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+
+                <label for="ryazhenka">Ryazhenka (2,50€)</label>
+                <select id="ryazhenka" name="ryazhenka">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+
+                <label for="uzvar">Uzvar (3,20€)</label>
+                <select id="uzvar" name="uzvar">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+
+                <label for="horilka">Horilka (5,00€)</label>
+                <select id="horilka" name="horilka">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+            </fieldset>
+
+            <fieldset>
+                <legend>Informations du client</legend>
+                <label for="name">Nom :</label>
+                <input type="text" id="name" name="name" >
+
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" >
+
+                <label for="phone">Téléphone :</label>
+                <input type="tel" id="phone" name="phone" >
+
+                <label for="address">Adresse de livraison :</label>
+                <textarea id="address" name="address" rows="3" ></textarea>
+            </fieldset>
+
+            <button type="submit">Passer la commande</button>
+        </form>
+    </section>
+
+    <h2>Commande Soumise</h2>
+    <table id="resultsTable">
+        <thead>
+            <tr>
+                <th>Nom</th>
+                <th>Email</th>
+                <th>Téléphone</th>
+                <th>Adresse</th>
+                <th>Bortsch</th>
+                <th>Varenyky</th>
+                <th>Holubtsi</th>
+                <th>Kotleta</th>
+                <th>Salo</th>
+                <th>Pampushky</th>
+                <th>Kompot</th>
+                <th>Kvas</th>
+                <th>Ryazhenka</th>
+                <th>Uzvar</th>
+                <th>Horilka</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+
+    <div include-html="additionals/footer.html"></div>
+
+    <!-- <script src="script.js"></script> -->
+
+</body>
+</html>
